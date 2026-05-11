@@ -6,6 +6,8 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const nav = [
   ["Services", "/services"],
   ["Packages", "/packages"],
+  ["Dashboard", "/dashboard"],
+  ["Client App", "/client-app"],
   ["Case Studies", "/case-studies"],
   ["About", "/about"],
   ["Contact", "/contact"]

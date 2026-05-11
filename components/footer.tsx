@@ -40,6 +40,12 @@ export function Footer() {
         <div>
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-white/38">Contact</p>
           <div className="grid gap-3 text-sm text-white/68">
+            <Link href="/dashboard" className="hover:text-white">
+              Team dashboard MVP
+            </Link>
+            <Link href="/client-app" className="hover:text-white">
+              Client app MVP
+            </Link>
             <Link href="/contact" className="hover:text-white">
               Book a consultation
             </Link>
