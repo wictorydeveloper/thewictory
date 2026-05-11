@@ -1,0 +1,22 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="900" fill="#080A0F"/>
+  <circle cx="1150" cy="170" r="250" fill="#326BFF" fill-opacity=".22"/>
+  <circle cx="320" cy="720" r="280" fill="#35E0A1" fill-opacity=".18"/>
+  <rect x="170" y="150" width="1100" height="600" rx="42" fill="#10141D" stroke="white" stroke-opacity=".12"/>
+  <rect x="230" y="215" width="340" height="420" rx="26" fill="#F7F4EE"/>
+  <rect x="270" y="270" width="190" height="24" rx="12" fill="#080A0F" fill-opacity=".82"/>
+  <rect x="270" y="320" width="250" height="14" rx="7" fill="#326BFF" fill-opacity=".35"/>
+  <rect x="270" y="354" width="210" height="14" rx="7" fill="#326BFF" fill-opacity=".25"/>
+  <path d="M270 545C310 500 360 520 394 470C430 415 468 430 520 350" stroke="#326BFF" stroke-width="12" stroke-linecap="round"/>
+  <rect x="640" y="215" width="240" height="180" rx="24" fill="white" fill-opacity=".08" stroke="white" stroke-opacity=".12"/>
+  <rect x="920" y="215" width="240" height="180" rx="24" fill="white" fill-opacity=".08" stroke="white" stroke-opacity=".12"/>
+  <rect x="640" y="455" width="520" height="180" rx="24" fill="white" fill-opacity=".08" stroke="white" stroke-opacity=".12"/>
+  <circle cx="760" cy="305" r="58" fill="#35E0A1"/>
+  <path d="M735 305H785M760 280V330" stroke="#080A0F" stroke-width="12" stroke-linecap="round"/>
+  <path d="M985 330L1025 278L1062 318L1095 258" stroke="#35E0A1" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="700" y="535" width="370" height="18" rx="9" fill="#F7F4EE" fill-opacity=".82"/>
+  <rect x="700" y="580" width="300" height="18" rx="9" fill="#F7F4EE" fill-opacity=".42"/>
+  <rect x="700" y="625" width="420" height="18" rx="9" fill="#F7F4EE" fill-opacity=".28"/>
+  <text x="230" y="710" fill="#F7F4EE" font-family="Arial, sans-serif" font-size="42" font-weight="700">AI Marketing Lab</text>
+  <text x="230" y="762" fill="#F7F4EE" fill-opacity=".62" font-family="Arial, sans-serif" font-size="24">Strategy, content, ads, analytics and local SEO in one system</text>
+</svg>

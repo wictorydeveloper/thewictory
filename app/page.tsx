@@ -6,7 +6,10 @@ import { ServicesGrid } from "@/components/services-grid";
 import { PackagesComparison } from "@/components/packages-comparison";
 import { GrowthDiagram } from "@/components/growth-diagram";
 import { FinalCta } from "@/components/final-cta";
+import { IndiaGrowth } from "@/components/india-growth";
 import { JsonLd } from "@/components/json-ld";
+import { ProofShowcase } from "@/components/proof-showcase";
+import { ResultsDashboard } from "@/components/results-dashboard";
 import { faqSchema, localBusinessSchema, serviceSchema } from "@/lib/schema";
 import { site } from "@/lib/site";
 
@@ -40,13 +43,13 @@ export default function HomePage() {
     <main>
       <JsonLd data={[localBusinessSchema(), serviceSchema("AI-powered digital marketing", site.description), faqSchema(faqs)]} />
       <Hero />
-      <Section eyebrow="Trusted growth signals" title="Built to turn attention into brand authority." copy="Premium execution across strategy, content, distribution, and performance. The system is designed for reach, recall, and measurable business growth.">
+      <Section eyebrow="Trusted growth signals" title="Built to turn attention into calls, rankings and brand authority." copy="The Wictory already has the proof Indian clients look for: 100+ brands, Google and Meta certification, a real team, video production capability and measurable social reach.">
         <div className="grid gap-4 md:grid-cols-4">
           {[
-            ["10M+", "reach generated through campaign ecosystems"],
-            ["300%", "average content velocity improvement after systemization"],
-            ["90 days", "to install a measurable social growth operating rhythm"],
-            ["India + UK", "local execution with international growth presence"]
+            ["100+", "brands transformed across India"],
+            ["1 Crore+", "social media reach capability"],
+            ["25+", "designers, marketers, developers and strategists"],
+            ["10+ years", "digital marketing and business growth experience"]
           ].map(([value, label]) => (
             <div key={value} className="rounded-[1rem] border border-black/8 bg-white/70 p-6 dark:border-white/10 dark:bg-white/6">
               <p className="text-4xl font-semibold tracking-tight">{value}</p>
@@ -55,8 +58,17 @@ export default function HomePage() {
           ))}
         </div>
       </Section>
+      <Section eyebrow="Real team. Real proof." title="A digital growth team Indian business owners can trust." copy="Your website now uses visible people, office energy and brand proof instead of only abstract panels. This makes the company feel established, local and credible.">
+        <ProofShowcase />
+      </Section>
       <Section eyebrow="Services" title="One premium team for the full digital growth ecosystem." copy="Every service is connected: brand clarity improves content, content improves reach, reach improves retargeting, and AI improves speed.">
         <ServicesGrid />
+      </Section>
+      <Section eyebrow="Results dashboard" title="Graphs that explain growth clearly, not just decoration." copy="Visitors can now see how reach compounds when content, SEO, ads, video and analytics work together with a disciplined weekly system.">
+        <ResultsDashboard />
+      </Section>
+      <Section eyebrow="India-first positioning" title="Premium, but not foreign. Built for how Indian clients actually buy." copy="The tone now speaks to practical outcomes: Google ranking, WhatsApp enquiries, lead quality, business trust, video presence, local dominance and pan-India growth.">
+        <IndiaGrowth />
       </Section>
       <Section eyebrow="Why The Wictory" title="An AI-first growth company for brands that refuse to look average." copy="The Wictory positions brands with strategic clarity, produces premium content, builds viral distribution systems, and uses AI to accelerate the workflows behind modern marketing.">
         <GrowthDiagram />

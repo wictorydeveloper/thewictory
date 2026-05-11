@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { FinalCta } from "@/components/final-cta";
+import { AiVisual } from "@/components/ai-visual";
 import { JsonLd } from "@/components/json-ld";
 import { Section } from "@/components/section";
 import { serviceSchema } from "@/lib/schema";
@@ -16,6 +17,9 @@ export default function ServicesPage() {
     <main>
       <JsonLd data={services.map((service) => serviceSchema(service.title, service.solution))} />
       <Section eyebrow="Services" title="Full-stack digital growth, engineered as one intelligent system." copy="Each service includes a clear problem, a strategic solution, a production process, and measurable growth outcomes.">
+        <div className="mb-8">
+          <AiVisual />
+        </div>
         <div className="grid gap-5">
           {services.map((service) => (
             <article key={service.slug} id={service.slug} className="rounded-[1.5rem] border border-black/8 bg-white/72 p-6 dark:border-white/10 dark:bg-white/6 lg:p-8">

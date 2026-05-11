@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { BrainCircuit, LineChart, RadioTower } from "lucide-react";
 import { CtaRow } from "@/components/cta";
+import { wictoryImages } from "@/lib/assets";
 
 const metrics = [
   ["10M+", "campaign reach generated"],
@@ -14,14 +16,14 @@ export function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
         <div className="animate-rise">
           <p className="mb-5 inline-flex rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm font-semibold text-black/70 backdrop-blur dark:border-white/12 dark:bg-white/8 dark:text-white/70">
-            AI-powered marketing for brands that want category leadership
+            AI-powered digital marketing for Indian businesses
           </p>
           <h1 className="text-balance text-5xl font-semibold tracking-tight sm:text-7xl lg:text-8xl">
-            We build brands that dominate attention.
+            Build a dominant brand in Tricity and across India.
           </h1>
           <p className="mt-7 max-w-2xl text-xl leading-9 text-black/64 dark:text-white/64">
-            The Wictory combines AI systems, cinematic content, brand strategy, social growth, and performance marketing
-            into one premium growth engine for ambitious Indian businesses.
+            The Wictory brings SEO, social media, reels, video production, branding, Google Ads, Meta Ads and AI systems
+            into one serious growth engine for business owners who want more calls, more reach and stronger trust.
           </p>
           <div className="mt-9">
             <CtaRow />
@@ -36,7 +38,17 @@ export function Hero() {
           </div>
         </div>
         <div className="relative min-h-[32rem]">
-          <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_30%_20%,rgba(53,224,161,.42),transparent_28%),radial-gradient(circle_at_70%_40%,rgba(50,107,255,.36),transparent_30%),linear-gradient(145deg,#080A0F,#151820)] shadow-premium" />
+          <div className="absolute inset-0 overflow-hidden rounded-[2rem] bg-ink shadow-premium">
+            <Image
+              src={wictoryImages.founders}
+              alt="The Wictory founders and digital marketing leadership"
+              width={980}
+              height={1180}
+              priority
+              className="h-full w-full object-cover opacity-78"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-transparent" />
+          </div>
           <div className="absolute inset-4 rounded-[1.5rem] border border-white/10" />
           <div className="absolute left-8 top-8 w-[72%] rounded-[8px] bg-white/10 p-5 text-white backdrop-blur animate-float">
             <div className="flex items-center gap-3">
@@ -46,13 +58,13 @@ export function Hero() {
             <div className="mt-5 h-2 rounded-full bg-white/10">
               <div className="h-2 w-[84%] rounded-full bg-signal" />
             </div>
-            <p className="mt-4 text-xs text-white/62">Hook quality, trend fit, audience intent, and publishing cadence.</p>
+            <p className="mt-4 text-xs text-white/62">SEO, reels, ads, local intent, call quality and publishing cadence.</p>
           </div>
           <div className="absolute bottom-9 left-8 right-8 rounded-[8px] bg-white p-5 text-ink shadow-premium dark:bg-white/92">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-semibold">Projected reach curve</p>
-                <p className="text-xs text-black/50">90-day growth system</p>
+                <p className="text-sm font-semibold">1 Crore+ reach systems</p>
+                <p className="text-xs text-black/50">Built for Indian buyer attention</p>
               </div>
               <LineChart className="h-5 w-5 text-cobalt" aria-hidden />
             </div>

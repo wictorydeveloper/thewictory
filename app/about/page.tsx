@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { FinalCta } from "@/components/final-cta";
 import { Section } from "@/components/section";
 import { JsonLd } from "@/components/json-ld";
 import { organizationSchema } from "@/lib/schema";
+import { wictoryImages } from "@/lib/assets";
 
 export const metadata: Metadata = {
   title: "About",
@@ -26,6 +28,17 @@ export default function AboutPage() {
               <p className="mt-4 leading-7 text-black/60 dark:text-white/60">{copy}</p>
             </article>
           ))}
+        </div>
+      </Section>
+      <Section eyebrow="Certified execution" title="Google, Meta, Microsoft and HubSpot certified marketing strength.">
+        <div className="overflow-hidden rounded-[1.5rem] border border-black/8 bg-white shadow-premium dark:border-white/10 dark:bg-white/6">
+          <Image
+            src={wictoryImages.certifications}
+            alt="The Wictory certifications from Google, Meta, Microsoft, HubSpot and other platforms"
+            width={1200}
+            height={720}
+            className="h-auto w-full object-cover"
+          />
         </div>
       </Section>
       <Section eyebrow="Timeline" title="From local execution to intelligent growth systems.">

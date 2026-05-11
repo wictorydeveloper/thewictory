@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { FinalCta } from "@/components/final-cta";
+import { ResultsDashboard } from "@/components/results-dashboard";
 import { Section } from "@/components/section";
 
 export const metadata: Metadata = {
@@ -27,6 +28,9 @@ export default function CaseStudiesPage() {
             </article>
           ))}
         </div>
+      </Section>
+      <Section eyebrow="Performance view" title="A clear graph layer for business owners and decision makers.">
+        <ResultsDashboard />
       </Section>
       <FinalCta />
     </main>
